@@ -12,8 +12,8 @@ from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 
-#Kia = LINE()
-Kia = LINE('token')
+Kia = LINE()
+#Kia = LINE('token')
 #Kia = LINE("email","paswot")
 Kia.log("Auth Token : " + str(Kia.authToken))
 channelToken = Kia.getChannelResult()
