@@ -12,9 +12,9 @@ from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 
-#Kia = LINE()
-Kia = LINE('Ev8ALwbyVo9OMJJX3jlb.GkU+Y9XGOkjMYaEG2TzRgW.TMGc4jDadjB+zqIguRgwZE2jlqs7C/twHvzPaGHGMHM=')
-#Kia = LINE("email@gmail.com","kiagus12")
+Kia = LINE() #Qr
+#Kia = LINE('Token')
+#Kia = LINE ("email","paswot")
 Kia.log("Auth Token : " + str(Kia.authToken))
 channelToken = Kia.getChannelResult()
 Kia.log("Channel Token : " + str(channelToken))
@@ -462,7 +462,7 @@ def KiaBot(op):
                 if text.lower() == 'help':
                     helpMessage = helpmessage()
                     Kia.sendMessage(to, str(helpMessage))
-            #        Kia.sendContact(to, "u80abbfcbdc60a0a266c807a0dad66b1b")
+                    Kia.sendContact(to, "u80abbfcbdc60a0a266c807a0dad66b1b")
                 elif text.lower() == 'texttospeech':
                     helpTextToSpeech = helptexttospeech()
                     Kia.sendMessage(to, str(helpTextToSpeech))
