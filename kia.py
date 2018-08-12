@@ -538,7 +538,7 @@ def KiaBot(op):
                 elif text.lower() == 'autoleave on':
                     settings["autoLeave"] = True
                     Kia.sendMessage(to, "☯➸ aυтo leave on")
-                elif text.lower() == 'autojoin off':
+                elif text.lower() == 'autoleave off':
                     settings["autoLeave"] = False
                     Kia.sendMessage(to, "☯➸ aυтo leave oғғ")
                 elif text.lower() == 'autoread on':
